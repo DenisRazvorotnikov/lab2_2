@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
-# -*- coding: utf-8 -*-
+# -- coding: utf-8 --
+
+import math
 
 if __name__ == '__main__':
-    x = int(input('enter a: '))
-    y = int(input('enter b: '))
-    if x**2 + y**2 == 1:
-        print('these coordinates belong to circle x^2 + y^2 = 1')
-    elif x**2 + y**2 == 0.25:
-        print('these coordinates belong to circle x^2 + y^2 = 0.25')
+    x = float(input())
+    y = float(input())
+    if 1 >= math.sqrt(x ** 2 + y ** 2) >= 0.25:
+        print("Входит в кольцо")
     else:
-        print('these coordinates dont belong to circle')
+        print("Не входит в кольцо")
+

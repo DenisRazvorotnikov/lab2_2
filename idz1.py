@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+import sys
 
 if __name__ == '__main__':
     a = int(input('Enter nomer month (the rage is from 1 to 12): '))
@@ -28,4 +29,7 @@ if __name__ == '__main__':
     elif a == 12:
         print('Это второе полугодиe. Месяц Декабрь - 31 день')
     else:
-        print('Error')
+        print(
+            'Error',
+            file=sys.stderr
+        )
